@@ -1,0 +1,29 @@
+# ===== 1. 最重要：防止 AWS 密鑰與敏感資料外洩 =====
+*.pem
+*.key
+.env
+.env.*
+secrets.tfvars
+
+# ===== 2. Terraform 相關 (若有使用 IaC) =====
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# ===== 3. Node.js / 前端專案 =====
+node_modules/
+npm-debug.log
+dist/
+
+# ===== 4. Python 相關 =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ===== 5. 作業系統雜項檔案 =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
